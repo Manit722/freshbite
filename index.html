@@ -1,0 +1,312 @@
+
+Action: file_editor create /app/static/index.html --file-text "<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta charset=\"UTF-8\" />
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+    <meta name=\"description\" content=\"FreshBite Cafe, Hazratganj, Lucknow — slow mornings, soulful flavours. A neighbourhood cafe with single-origin coffee, hand-rolled pasta and Awadhi-inspired plates.\" />
+    <title>FreshBite Cafe · Hazratganj, Lucknow</title>
+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />
+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />
+    <link href=\"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap\" rel=\"stylesheet\" />
+    <link rel=\"stylesheet\" href=\"style.css\" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class=\"navbar\" id=\"navbar\">
+        <div class=\"nav-inner\">
+            <a href=\"#top\" class=\"brand\">
+                <span class=\"brand-name\">FreshBite</span>
+                <span class=\"brand-sub\">Lucknow</span>
+            </a>
+            <div class=\"nav-links\">
+                <a href=\"#menu\" class=\"nav-link\">Menu</a>
+                <a href=\"#about\" class=\"nav-link\">About</a>
+                <a href=\"#reserve\" class=\"nav-link\">Reserve</a>
+                <a href=\"#gallery\" class=\"nav-link\">Gallery</a>
+                <a href=\"#contact\" class=\"nav-link\">Visit</a>
+            </div>
+            <div class=\"nav-actions\">
+                <button class=\"btn-ghost cart-toggle\" id=\"cartToggle\" aria-label=\"Open cart\">
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"/><path d=\"M3 6h18\"/><path d=\"M16 10a4 4 0 0 1-8 0\"/></svg>
+                    <span class=\"cart-badge\" id=\"cartBadge\" hidden>0</span>
+                </button>
+                <a href=\"#reserve\" class=\"btn-primary nav-cta\">Reserve</a>
+                <button class=\"btn-ghost mobile-toggle\" id=\"mobileToggle\" aria-label=\"Toggle menu\">
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><line x1=\"4\" y1=\"6\" x2=\"20\" y2=\"6\"/><line x1=\"4\" y1=\"12\" x2=\"20\" y2=\"12\"/><line x1=\"4\" y1=\"18\" x2=\"20\" y2=\"18\"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class=\"mobile-menu\" id=\"mobileMenu\" hidden>
+            <a href=\"#menu\">Menu</a>
+            <a href=\"#about\">About</a>
+            <a href=\"#reserve\">Reserve</a>
+            <a href=\"#gallery\">Gallery</a>
+            <a href=\"#contact\">Visit</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class=\"hero\" id=\"top\">
+        <img class=\"hero-bg\" src=\"https://images.unsplash.com/photo-1751956066306-c5684cbcf385?crop=entropy&cs=srgb&fm=jpg&q=85&w=1920\" alt=\"FreshBite cafe interior\" />
+        <div class=\"hero-overlay\"></div>
+        <div class=\"hero-content\">
+            <p class=\"overline overline-light fade-up\">FreshBite Cafe — Hazratganj, Lucknow</p>
+            <h1 class=\"hero-heading fade-up delay-1\">
+                Slow mornings.<br />
+                <em>Soulful flavours.</em>
+            </h1>
+            <p class=\"hero-text fade-up delay-2\">
+                A neighbourhood cafe where Awadhi heritage meets a modern, single-origin
+                coffee bar. Hand-rolled pasta, wood-fired bites and a quiet corner with
+                your name on it.
+            </p>
+            <div class=\"hero-cta fade-up delay-3\">
+                <a href=\"#menu\" class=\"btn-primary\">Explore the menu →</a>
+                <a href=\"#reserve\" class=\"btn-outline-light\">Reserve a table</a>
+            </div>
+            <div class=\"hero-rating fade-up delay-4\">
+                <span class=\"stars\">★★★★★</span>
+                <span>4.9 · loved by 2,300+ guests this season</span>
+            </div>
+        </div>
+        <span class=\"scroll-cue\">scroll</span>
+    </section>
+
+    <!-- About -->
+    <section id=\"about\" class=\"section about\">
+        <div class=\"grid-12 gap-large\">
+            <div class=\"col-5 about-text\">
+                <p class=\"overline\">Our Story</p>
+                <h2 class=\"section-heading\">A small kitchen with <em>big intentions</em>.</h2>
+                <p class=\"prose\">
+                    FreshBite started in 2019 above a bookshop in Hazratganj — a single
+                    espresso machine, two cane chairs and a hand-written menu. Today, our
+                    kitchen sources from twelve regional farms across Uttar Pradesh, our
+                    beans are roasted weekly, and our pastry counter still opens at exactly
+                    7:30 in the morning.
+                </p>
+                <p class=\"prose\">
+                    Every plate we send out is the answer to one quiet question: would we
+                    proudly serve this to our family on a Sunday?
+                </p>
+                <div class=\"stats\">
+                    <div><div class=\"stat-num\">06</div><div class=\"stat-label\">Years brewing</div></div>
+                    <div><div class=\"stat-num\">12</div><div class=\"stat-label\">Local farms</div></div>
+                    <div><div class=\"stat-num\">48</div><div class=\"stat-label\">Cosy seats</div></div>
+                </div>
+            </div>
+            <div class=\"col-7 about-images\">
+                <div class=\"img-tall\">
+                    <img src=\"https://images.pexels.com/photos/35113259/pexels-photo-35113259.jpeg?auto=compress&cs=tinysrgb&w=900\" alt=\"Cafe interior\" />
+                </div>
+                <div class=\"img-square offset\">
+                    <img src=\"https://images.unsplash.com/photo-1774294509888-82cdec15589b?crop=entropy&cs=srgb&fm=jpg&w=600\" alt=\"Latte art\" />
+                </div>
+                <div class=\"img-square\">
+                    <img src=\"https://images.unsplash.com/photo-1775945834676-582622e9c42d?crop=entropy&cs=srgb&fm=jpg&w=600\" alt=\"Coffee & bakes\" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id=\"menu\" class=\"section menu-section\">
+        <div class=\"section-head\">
+            <div>
+                <p class=\"overline\">The Menu</p>
+                <h2 class=\"section-heading\">Seasonal &amp; <em>slowly-made</em></h2>
+            </div>
+            <p class=\"section-sub\">
+                Tap any dish to add it to your order. Our menu refreshes with the season —
+                last updated this week.
+            </p>
+        </div>
+        <div class=\"categories\" id=\"categories\"></div>
+        <div class=\"menu-grid\" id=\"menuGrid\"></div>
+    </section>
+
+    <!-- Reservation -->
+    <section id=\"reserve\" class=\"section reservation\">
+        <div class=\"grid-12 gap-large\">
+            <div class=\"col-5\">
+                <p class=\"overline\">Reservations</p>
+                <h2 class=\"section-heading\">Save your <em>window seat</em>.</h2>
+                <p class=\"prose\">
+                    We hold every booking for 15 minutes past the reserved time. For groups
+                    of 8 or more, please give us a call so we can prepare the long table.
+                </p>
+                <div class=\"info-block\">
+                    <div><strong>Hours</strong> · 7:30 AM — 11:00 PM, daily</div>
+                    <div><strong>Group calls</strong> · +91 522 4040 121</div>
+                </div>
+            </div>
+            <form class=\"col-7 card form\" id=\"reservationForm\" novalidate>
+                <div class=\"form-grid\">
+                    <div class=\"form-row\">
+                        <label class=\"overline\" for=\"resDate\">Date</label>
+                        <input type=\"date\" id=\"resDate\" class=\"fb-input\" required />
+                    </div>
+                    <div class=\"form-row\">
+                        <label class=\"overline\" for=\"resTime\">Time</label>
+                        <select id=\"resTime\" class=\"fb-input\" required>
+                            <option value=\"\">Select time</option>
+                        </select>
+                    </div>
+                    <div class=\"form-row\">
+                        <label class=\"overline\" for=\"resGuests\">Guests</label>
+                        <select id=\"resGuests\" class=\"fb-input\">
+                        </select>
+                    </div>
+                    <div class=\"form-row\">
+                        <label class=\"overline\" for=\"resOccasion\">Occasion (optional)</label>
+                        <input type=\"text\" id=\"resOccasion\" class=\"fb-input\" placeholder=\"Birthday, anniversary, casual…\" />
+                    </div>
+                    <div class=\"form-row\">
+                        <label class=\"overline\" for=\"resName\">Full name</label>
+                        <input type=\"text\" id=\"resName\" class=\"fb-input\" required />
+                    </div>
+                    <div class=\"form-row\">
+                        <label class=\"overline\" for=\"resPhone\">Phone</label>
+                        <input type=\"tel\" id=\"resPhone\" class=\"fb-input\" required />
+                    </div>
+                    <div class=\"form-row span-2\">
+                        <label class=\"overline\" for=\"resEmail\">Email (optional)</label>
+                        <input type=\"email\" id=\"resEmail\" class=\"fb-input\" />
+                    </div>
+                    <div class=\"form-row span-2\">
+                        <label class=\"overline\" for=\"resNotes\">Special requests (optional)</label>
+                        <textarea id=\"resNotes\" rows=\"2\" class=\"fb-input\"></textarea>
+                    </div>
+                </div>
+                <button type=\"submit\" class=\"btn-primary mt-large\">Book my table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id=\"gallery\" class=\"section gallery\">
+        <div class=\"section-head\">
+            <div>
+                <p class=\"overline\">Inside FreshBite</p>
+                <h2 class=\"section-heading\">A <em>slow</em> kind of beautiful</h2>
+            </div>
+            <span class=\"handle\">@freshbite.lko</span>
+        </div>
+        <div class=\"gallery-grid\">
+            <div class=\"g-item g-large\"><img src=\"https://images.unsplash.com/photo-1775179424139-bd65d79c132e?crop=entropy&cs=srgb&fm=jpg&w=900\" alt=\"Sunlit cafe corner\" /></div>
+            <div class=\"g-item\"><img src=\"https://images.unsplash.com/photo-1761210719318-3c2164dfa980?crop=entropy&cs=srgb&fm=jpg&w=700\" alt=\"Latte and croissants\" /></div>
+            <div class=\"g-item\"><img src=\"https://images.unsplash.com/photo-1773927005455-8efc55a8d512?crop=entropy&cs=srgb&fm=jpg&w=700\" alt=\"Plants and tables\" /></div>
+            <div class=\"g-item\"><img src=\"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900\" alt=\"Burrata salad\" /></div>
+            <div class=\"g-item\"><img src=\"https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=900\" alt=\"Iced latte\" /></div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id=\"contact\" class=\"section contact\">
+        <div class=\"grid-12 gap-large\">
+            <div class=\"col-6\">
+                <p class=\"overline\">Visit Us</p>
+                <h2 class=\"section-heading\">Find us in the lanes of <em>Hazratganj</em>.</h2>
+                <div class=\"contact-grid\">
+                    <div class=\"contact-block\">
+                        <div class=\"overline\">Address</div>
+                        <p>14B, Mahatma Gandhi Marg<br />Hazratganj, Lucknow 226001</p>
+                    </div>
+                    <div class=\"contact-block\">
+                        <div class=\"overline\">Hours</div>
+                        <p>Mon — Sun<br />7:30 AM — 11:00 PM</p>
+                    </div>
+                    <div class=\"contact-block\">
+                        <div class=\"overline\">Call</div>
+                        <p>+91 522 4040 121<br />+91 99876 54321</p>
+                    </div>
+                    <div class=\"contact-block\">
+                        <div class=\"overline\">Email</div>
+                        <p>hello@freshbite.cafe<br />events@freshbite.cafe</p>
+                    </div>
+                </div>
+                <div class=\"map\">
+                    <iframe title=\"Map\" src=\"https://www.google.com/maps?q=Hazratganj,+Lucknow&output=embed\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>
+                </div>
+            </div>
+            <form class=\"col-6 card form\" id=\"contactForm\" novalidate>
+                <h3 class=\"card-heading\">Drop us a line</h3>
+                <p class=\"card-sub\">Private events, press, partnerships — we read every message.</p>
+                <div class=\"form-row\">
+                    <label class=\"overline\" for=\"cName\">Your name</label>
+                    <input type=\"text\" id=\"cName\" class=\"fb-input\" required />
+                </div>
+                <div class=\"form-row\">
+                    <label class=\"overline\" for=\"cEmail\">Email</label>
+                    <input type=\"email\" id=\"cEmail\" class=\"fb-input\" required />
+                </div>
+                <div class=\"form-row\">
+                    <label class=\"overline\" for=\"cMsg\">Message</label>
+                    <textarea id=\"cMsg\" rows=\"4\" class=\"fb-input\" required></textarea>
+                </div>
+                <button type=\"submit\" class=\"btn-primary mt-large\">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+        <div class=\"footer-grid\">
+            <div class=\"footer-col-wide\">
+                <div class=\"brand-name footer-brand\">FreshBite</div>
+                <p class=\"footer-text\">A neighbourhood cafe in Lucknow. Slow mornings, soulful flavours and coffee made with intention since 2019.</p>
+            </div>
+            <div>
+                <p class=\"overline overline-dim\">Visit</p>
+                <p class=\"footer-text\">14B, MG Marg<br />Hazratganj, Lucknow 226001</p>
+            </div>
+            <div>
+                <p class=\"overline overline-dim\">Hours</p>
+                <p class=\"footer-text\">7:30 AM — 11:00 PM<br />Daily</p>
+            </div>
+            <div>
+                <p class=\"overline overline-dim\">Follow</p>
+                <div class=\"socials\">
+                    <a href=\"#\" aria-label=\"Instagram\">Instagram</a>
+                    <a href=\"#\" aria-label=\"Facebook\">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class=\"footer-bottom\">
+            <span>© <span id=\"year\"></span> FreshBite Cafe, Lucknow. All rights reserved.</span>
+            <span class=\"tagline\">Crafted slowly, served warmly</span>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class=\"drawer-backdrop\" id=\"drawerBackdrop\" hidden></div>
+    <aside class=\"drawer\" id=\"cartDrawer\" hidden aria-label=\"Cart\">
+        <div class=\"drawer-head\">
+            <h3 class=\"card-heading\">Your order</h3>
+            <button class=\"btn-ghost\" id=\"cartClose\" aria-label=\"Close cart\">✕</button>
+        </div>
+        <div class=\"drawer-body\" id=\"cartBody\"></div>
+        <div class=\"drawer-foot\" id=\"cartFoot\" hidden>
+            <div class=\"cart-total-row\">
+                <span class=\"overline\" id=\"cartCountLabel\">Subtotal</span>
+                <span class=\"cart-total-amount\" id=\"cartTotal\">₹0</span>
+            </div>
+            <button class=\"btn-primary full\" id=\"checkoutBtn\">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Checkout Modal -->
+    <div class=\"modal-backdrop\" id=\"modalBackdrop\" hidden></div>
+    <div class=\"modal\" id=\"checkoutModal\" hidden role=\"dialog\" aria-modal=\"true\">
+        <div class=\"modal-body\" id=\"modalBody\"></div>
+    </div>
+
+    <!-- Toast -->
+    <div class=\"toast\" id=\"toast\" hidden></div>
+
+    <script src=\"script.js\"></script>
+</body>
+</html>
+"
+Observation: Create successful: /app/static/index.html
